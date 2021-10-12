@@ -60,11 +60,7 @@ class API(object):
 
         if self.debug:
             # https://stackoverflow.com/a/16630836
-            try:
-                import http.client as http_client
-            except ImportError:
-                # Python 2
-                import httplib as http_client
+            import http.client as http_client
             http_client.HTTPConnection.debuglevel = 1
 
             # You must initialize logging,
