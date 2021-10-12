@@ -4,6 +4,7 @@ python:
   - 3.7
   - 3.8
   - 3.9
+  - 3.10
 install:
   - sudo apt-get install libgeos-dev
   - pip install -r requirements-dev.txt
